@@ -18,8 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/register', function(){
-    return view('register_dbd');
-});
-
+Route::get('/register', function(){return view('register_dbd');});
 Route::post('/register/save', [RegisterController::class, 'register']);
